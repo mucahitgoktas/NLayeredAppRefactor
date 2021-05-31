@@ -1,0 +1,130 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\pc\\Documents\\GitHub\\NLayeredAppReFactor\\NLayeredAppDemo\\NorthWind.WebFormsUI\\NorthWind.WebFormsUI.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\pc\\Documents\\GitHub\\NLayeredAppReFactor\\NLayeredAppDemo\\NorthWind.Buisness\\NorthWind.Buisness.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\pc\\Documents\\GitHub\\NLayeredAppReFactor\\NLayeredAppDemo\\NorthWind.Buisness\\NorthWind.Buisness.csproj",
+        "projectName": "NorthWind.Buisness",
+        "projectPath": "C:\\Users\\pc\\Documents\\GitHub\\NLayeredAppReFactor\\NLayeredAppDemo\\NorthWind.Buisness\\NorthWind.Buisness.csproj",
+        "frameworks": {
+          "net472": {
+            "projectReferences": {
+              "C:\\Users\\pc\\Documents\\GitHub\\NLayeredAppReFactor\\NLayeredAppDemo\\Northwind.DataAccess\\Northwind.DataAccess.csproj": {
+                "projectPath": "C:\\Users\\pc\\Documents\\GitHub\\NLayeredAppReFactor\\NLayeredAppDemo\\Northwind.DataAccess\\Northwind.DataAccess.csproj"
+              },
+              "C:\\Users\\pc\\Documents\\GitHub\\NLayeredAppReFactor\\NLayeredAppDemo\\Northwind.Entities\\Northwind.Entities.csproj": {
+                "projectPath": "C:\\Users\\pc\\Documents\\GitHub\\NLayeredAppReFactor\\NLayeredAppDemo\\Northwind.Entities\\Northwind.Entities.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
+    "C:\\Users\\pc\\Documents\\GitHub\\NLayeredAppReFactor\\NLayeredAppDemo\\Northwind.DataAccess\\Northwind.DataAccess.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\pc\\Documents\\GitHub\\NLayeredAppReFactor\\NLayeredAppDemo\\Northwind.DataAccess\\Northwind.DataAccess.csproj",
+        "projectName": "Northwind.DataAccess",
+        "projectPath": "C:\\Users\\pc\\Documents\\GitHub\\NLayeredAppReFactor\\NLayeredAppDemo\\Northwind.DataAccess\\Northwind.DataAccess.csproj",
+        "frameworks": {
+          "net472": {
+            "projectReferences": {
+              "C:\\Users\\pc\\Documents\\GitHub\\NLayeredAppReFactor\\NLayeredAppDemo\\Northwind.Entities\\Northwind.Entities.csproj": {
+                "projectPath": "C:\\Users\\pc\\Documents\\GitHub\\NLayeredAppReFactor\\NLayeredAppDemo\\Northwind.Entities\\Northwind.Entities.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
+    "C:\\Users\\pc\\Documents\\GitHub\\NLayeredAppReFactor\\NLayeredAppDemo\\Northwind.Entities\\Northwind.Entities.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\pc\\Documents\\GitHub\\NLayeredAppReFactor\\NLayeredAppDemo\\Northwind.Entities\\Northwind.Entities.csproj",
+        "projectName": "Northwind.Entities",
+        "projectPath": "C:\\Users\\pc\\Documents\\GitHub\\NLayeredAppReFactor\\NLayeredAppDemo\\Northwind.Entities\\Northwind.Entities.csproj"
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
+    "C:\\Users\\pc\\Documents\\GitHub\\NLayeredAppReFactor\\NLayeredAppDemo\\NorthWind.WebFormsUI\\NorthWind.WebFormsUI.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\pc\\Documents\\GitHub\\NLayeredAppReFactor\\NLayeredAppDemo\\NorthWind.WebFormsUI\\NorthWind.WebFormsUI.csproj",
+        "projectName": "NorthWind.WebFormsUI",
+        "projectPath": "C:\\Users\\pc\\Documents\\GitHub\\NLayeredAppReFactor\\NLayeredAppDemo\\NorthWind.WebFormsUI\\NorthWind.WebFormsUI.csproj",
+        "packagesPath": "C:\\Users\\pc\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\pc\\Documents\\GitHub\\NLayeredAppReFactor\\NLayeredAppDemo\\NorthWind.WebFormsUI\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\pc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "C:\\Users\\pc\\Documents\\GitHub\\NLayeredAppReFactor\\NLayeredAppDemo\\NorthWind.Buisness\\NorthWind.Buisness.csproj": {
+                "projectPath": "C:\\Users\\pc\\Documents\\GitHub\\NLayeredAppReFactor\\NLayeredAppDemo\\NorthWind.Buisness\\NorthWind.Buisness.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[6.4.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WindowsForms": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

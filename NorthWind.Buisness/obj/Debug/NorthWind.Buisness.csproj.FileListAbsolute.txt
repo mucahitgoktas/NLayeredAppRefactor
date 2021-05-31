@@ -1,0 +1,14 @@
+C:\Users\pc\Documents\GitHub\NLayeredAppDemo\NLayeredAppDemo\NorthWind.Buisness\obj\Debug\NorthWind.Buisness.csprojAssemblyReference.cache
+C:\Users\pc\Documents\GitHub\NLayeredAppDemo\NLayeredAppDemo\NorthWind.Buisness\obj\Debug\NorthWind.Buisness.csproj.CoreCompileInputs.cache
+C:\Users\pc\Documents\GitHub\NLayeredAppDemo\NLayeredAppDemo\NorthWind.Buisness\bin\Debug\NorthWind.Buisness.dll
+C:\Users\pc\Documents\GitHub\NLayeredAppDemo\NLayeredAppDemo\NorthWind.Buisness\bin\Debug\NorthWind.Buisness.pdb
+C:\Users\pc\Documents\GitHub\NLayeredAppDemo\NLayeredAppDemo\NorthWind.Buisness\bin\Debug\Northwind.DataAccess.dll
+C:\Users\pc\Documents\GitHub\NLayeredAppDemo\NLayeredAppDemo\NorthWind.Buisness\bin\Debug\Northwind.Entities.dll
+C:\Users\pc\Documents\GitHub\NLayeredAppDemo\NLayeredAppDemo\NorthWind.Buisness\bin\Debug\EntityFramework.dll
+C:\Users\pc\Documents\GitHub\NLayeredAppDemo\NLayeredAppDemo\NorthWind.Buisness\bin\Debug\Northwind.DataAccess.pdb
+C:\Users\pc\Documents\GitHub\NLayeredAppDemo\NLayeredAppDemo\NorthWind.Buisness\bin\Debug\Northwind.DataAccess.dll.config
+C:\Users\pc\Documents\GitHub\NLayeredAppDemo\NLayeredAppDemo\NorthWind.Buisness\bin\Debug\Northwind.Entities.pdb
+C:\Users\pc\Documents\GitHub\NLayeredAppDemo\NLayeredAppDemo\NorthWind.Buisness\bin\Debug\EntityFramework.xml
+C:\Users\pc\Documents\GitHub\NLayeredAppDemo\NLayeredAppDemo\NorthWind.Buisness\obj\Debug\NorthWind.Buisness.csproj.CopyComplete
+C:\Users\pc\Documents\GitHub\NLayeredAppDemo\NLayeredAppDemo\NorthWind.Buisness\obj\Debug\NorthWind.Buisness.dll
+C:\Users\pc\Documents\GitHub\NLayeredAppDemo\NLayeredAppDemo\NorthWind.Buisness\obj\Debug\NorthWind.Buisness.pdb
