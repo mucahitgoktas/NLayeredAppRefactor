@@ -4,10 +4,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Northwind.DataAccess.Abstract;
 
-namespace Northwind.DataAccess.Concrete // Veri tabanı iletişimi için somut işlemler.
+namespace Northwind.DataAccess.Concrete.EntityFramework // Veri tabanı iletişimi için somut işlemler.
 {
-    public class ProductDal // ürünlerle ilgili veri tabanı operasyonları.
+    public class EfProductDal : IproductDal // ürünlerle ilgili veri tabanı operasyonları.
     {
         public List<Product> GetAll() // veri tabanından hepsini getir metodu.
         {

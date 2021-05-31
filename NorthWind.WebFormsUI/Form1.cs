@@ -8,6 +8,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using NorthWind.Buisness.Abstract;
+using Northwind.DataAccess.Concrete.EntityFramework;
+using Northwind.DataAccess.Concrete.NHibernate;
 
 
 namespace NorthWind.WebFormsUI
@@ -17,6 +20,7 @@ namespace NorthWind.WebFormsUI
         public Form1()
         {
             InitializeComponent();
+            _productService = new ProductManager(new NhProductDal());
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e) // datagridview eventi.
@@ -24,12 +28,12 @@ namespace NorthWind.WebFormsUI
            
 
         }
-
+        private IProductService _productService;
         private void Form1_Load(object sender, EventArgs e)
         {
             // Burada sadece buisness çağırılır. // Buisness'a sağ tıklayıp add Reference üzerinden WebFormsUI eklenir.
-            ProductManager productManager = new ProductManager();
-            dgwProduct.DataSource = productManager.GetAll();
+            
+            dgwProduct.DataSource = _productService.GetAll();
         }
     }
 }
