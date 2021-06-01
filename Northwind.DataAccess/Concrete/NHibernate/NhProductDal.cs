@@ -11,6 +11,11 @@ namespace Northwind.DataAccess.Concrete.NHibernate
 {
     public class NhProductDal : IproductDal
     {
+        public Product Get(Expression<Func<Product, bool>> filter = null)
+        {
+            throw new NotImplementedException();
+        }
+
         public void Add(Product product)
         {
             throw new NotImplementedException();

@@ -4,3 +4,9 @@ C:\Users\pc\Documents\GitHub\NLayeredAppDemo\NLayeredAppDemo\Northwind.Entities\
 C:\Users\pc\Documents\GitHub\NLayeredAppDemo\NLayeredAppDemo\Northwind.Entities\obj\Debug\Northwind.Entities.csproj.CoreCompileInputs.cache
 C:\Users\pc\Documents\GitHub\NLayeredAppDemo\NLayeredAppDemo\Northwind.Entities\obj\Debug\Northwind.Entities.dll
 C:\Users\pc\Documents\GitHub\NLayeredAppDemo\NLayeredAppDemo\Northwind.Entities\obj\Debug\Northwind.Entities.pdb
+C:\Users\pc\Documents\GitHub\NLayeredAppRefactor\Northwind.Entities\bin\Debug\Northwind.Entities.dll
+C:\Users\pc\Documents\GitHub\NLayeredAppRefactor\Northwind.Entities\bin\Debug\Northwind.Entities.pdb
+C:\Users\pc\Documents\GitHub\NLayeredAppRefactor\Northwind.Entities\obj\Debug\Northwind.Entities.csprojAssemblyReference.cache
+C:\Users\pc\Documents\GitHub\NLayeredAppRefactor\Northwind.Entities\obj\Debug\Northwind.Entities.csproj.CoreCompileInputs.cache
+C:\Users\pc\Documents\GitHub\NLayeredAppRefactor\Northwind.Entities\obj\Debug\Northwind.Entities.dll
+C:\Users\pc\Documents\GitHub\NLayeredAppRefactor\Northwind.Entities\obj\Debug\Northwind.Entities.pdb
