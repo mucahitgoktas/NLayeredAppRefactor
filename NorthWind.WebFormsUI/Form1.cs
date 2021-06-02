@@ -37,6 +37,7 @@ namespace NorthWind.WebFormsUI
 
             LoadProduct();
             LoadCategories();
+            
         }
 
         private void LoadCategories()
@@ -62,6 +63,18 @@ namespace NorthWind.WebFormsUI
                 
             }
             
+        }
+
+        private void tbxProductName_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                dgwProduct.DataSource = _productService.GetProductsByName(tbxProductName.Text);
+            }
+            catch 
+            {
+                
+            }
         }
     }
 }

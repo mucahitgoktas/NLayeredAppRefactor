@@ -9,7 +9,7 @@ using System.Linq.Expressions;
 
 namespace Northwind.DataAccess.Concrete.NHibernate
 {
-    public class NhProductDal : IproductDal
+    public class NhProductDal : IProductDal
     {
         public Product Get(Expression<Func<Product, bool>> filter = null)
         {

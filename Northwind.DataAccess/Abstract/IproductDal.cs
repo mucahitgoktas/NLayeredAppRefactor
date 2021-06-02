@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Northwind.DataAccess.Abstract
 {
-    public interface IproductDal : IentityRepository<Product>
+    public interface IProductDal : IEntityRepository<Product>
     {
        
     }

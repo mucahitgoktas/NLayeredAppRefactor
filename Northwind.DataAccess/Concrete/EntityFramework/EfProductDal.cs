@@ -9,7 +9,7 @@ using System.Linq.Expressions;
 
 namespace Northwind.DataAccess.Concrete.EntityFramework // Veri tabanı iletişimi için somut işlemler.
 {
-    public class EfProductDal : EfEntityRepositoryBase<Product,NorthWindContext>,IproductDal
+    public class EfProductDal : EfEntityRepositoryBase<Product,NorthWindContext>,IProductDal
     {
         
 

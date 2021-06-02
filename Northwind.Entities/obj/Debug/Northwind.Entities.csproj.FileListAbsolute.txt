@@ -10,3 +10,9 @@ C:\Users\pc\Documents\GitHub\NLayeredAppRefactor\Northwind.Entities\obj\Debug\No
 C:\Users\pc\Documents\GitHub\NLayeredAppRefactor\Northwind.Entities\obj\Debug\Northwind.Entities.csproj.CoreCompileInputs.cache
 C:\Users\pc\Documents\GitHub\NLayeredAppRefactor\Northwind.Entities\obj\Debug\Northwind.Entities.dll
 C:\Users\pc\Documents\GitHub\NLayeredAppRefactor\Northwind.Entities\obj\Debug\Northwind.Entities.pdb
+C:\Users\Lenovo\Documents\GitHub\NLayeredAppRefactor\Northwind.Entities\bin\Debug\Northwind.Entities.dll
+C:\Users\Lenovo\Documents\GitHub\NLayeredAppRefactor\Northwind.Entities\bin\Debug\Northwind.Entities.pdb
+C:\Users\Lenovo\Documents\GitHub\NLayeredAppRefactor\Northwind.Entities\obj\Debug\Northwind.Entities.csprojAssemblyReference.cache
+C:\Users\Lenovo\Documents\GitHub\NLayeredAppRefactor\Northwind.Entities\obj\Debug\Northwind.Entities.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\Documents\GitHub\NLayeredAppRefactor\Northwind.Entities\obj\Debug\Northwind.Entities.dll
+C:\Users\Lenovo\Documents\GitHub\NLayeredAppRefactor\Northwind.Entities\obj\Debug\Northwind.Entities.pdb

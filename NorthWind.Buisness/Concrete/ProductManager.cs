@@ -38,5 +38,10 @@ namespace NorthWind.Buisness.Concrete
         {
             return _productDal.GetAll(p => p.CategoryId == categoryId);
         }
+
+        public List<Product> GetProductsByName(string productName)
+        {
+            return _productDal.GetAll(p => p.ProductName.Contains(productName));
+        }
     }
 }

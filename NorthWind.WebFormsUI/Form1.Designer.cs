@@ -97,6 +97,7 @@ namespace NorthWind.WebFormsUI
             this.tbxProductName.Name = "tbxProductName";
             this.tbxProductName.Size = new System.Drawing.Size(135, 23);
             this.tbxProductName.TabIndex = 1;
+            this.tbxProductName.TextChanged += new System.EventHandler(this.tbxProductName_TextChanged);
             // 
             // lblProductName
             // 

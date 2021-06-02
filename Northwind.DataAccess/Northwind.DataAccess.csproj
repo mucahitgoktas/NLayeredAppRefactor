@@ -52,8 +52,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Abstract\ICategoryDal.cs" />
-    <Compile Include="Abstract\IentityRepository.cs" />
-    <Compile Include="Abstract\IproductDal.cs" />
+    <Compile Include="Abstract\IEntityRepository.cs" />
+    <Compile Include="Abstract\IProductDal.cs" />
     <Compile Include="Concrete\EntityFramework\EfCategoryDal.cs" />
     <Compile Include="Concrete\EntityFramework\EfEntityRepositoryBase.cs" />
     <Compile Include="Concrete\EntityFramework\NorthWindContext.cs" />

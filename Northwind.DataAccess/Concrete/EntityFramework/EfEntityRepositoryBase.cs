@@ -10,7 +10,7 @@ using System.Data.Entity;
 
 namespace Northwind.DataAccess.Concrete.EntityFramework
 {
-    public class EfEntityRepositoryBase<TEntity, TContext> : IentityRepository<TEntity>
+    public class EfEntityRepositoryBase<TEntity, TContext> : IEntityRepository<TEntity>
         where TEntity : class, IEntity, new()
         where TContext : DbContext, new()
     {

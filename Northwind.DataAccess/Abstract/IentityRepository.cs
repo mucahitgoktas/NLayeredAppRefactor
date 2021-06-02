@@ -8,7 +8,7 @@ using Northwind.Entities.Abstract;
 
 namespace Northwind.DataAccess.Abstract
 {
-    public interface IentityRepository<T> where T:class ,IEntity,new() // kullanıcı type olarak class kullansın, IEntity kullansın ve new'lesin.
+    public interface IEntityRepository<T> where T:class ,IEntity,new() // kullanıcı type olarak class kullansın, IEntity kullansın ve new'lesin.
     {
         List<T> GetAll(Expression<Func<T,bool>> filter=null); // Listeyi getirirken bir filtre versin, vermezse hepsini getir.
         T Get(Expression<Func<T, bool>> filter = null); // (önceden burası id'di) burada kendisi bir filtre versin ve öyle getir.

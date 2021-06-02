@@ -7,7 +7,8 @@ using Northwind.Entities.Concrete;
 
 namespace Northwind.DataAccess.Abstract
 {
-    public interface ICategoryDal : IentityRepository<Category>
+    public interface ICategoryDal : IEntityRepository<Category>
     {
+
     }
 }

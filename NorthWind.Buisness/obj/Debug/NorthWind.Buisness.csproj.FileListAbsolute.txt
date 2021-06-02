@@ -26,3 +26,17 @@ C:\Users\pc\Documents\GitHub\NLayeredAppRefactor\NorthWind.Buisness\obj\Debug\No
 C:\Users\pc\Documents\GitHub\NLayeredAppRefactor\NorthWind.Buisness\obj\Debug\NorthWind.Buisness.csproj.CopyComplete
 C:\Users\pc\Documents\GitHub\NLayeredAppRefactor\NorthWind.Buisness\obj\Debug\NorthWind.Buisness.dll
 C:\Users\pc\Documents\GitHub\NLayeredAppRefactor\NorthWind.Buisness\obj\Debug\NorthWind.Buisness.pdb
+C:\Users\Lenovo\Documents\GitHub\NLayeredAppRefactor\NorthWind.Buisness\bin\Debug\NorthWind.Buisness.dll
+C:\Users\Lenovo\Documents\GitHub\NLayeredAppRefactor\NorthWind.Buisness\bin\Debug\NorthWind.Buisness.pdb
+C:\Users\Lenovo\Documents\GitHub\NLayeredAppRefactor\NorthWind.Buisness\bin\Debug\Northwind.DataAccess.dll
+C:\Users\Lenovo\Documents\GitHub\NLayeredAppRefactor\NorthWind.Buisness\bin\Debug\Northwind.Entities.dll
+C:\Users\Lenovo\Documents\GitHub\NLayeredAppRefactor\NorthWind.Buisness\bin\Debug\EntityFramework.dll
+C:\Users\Lenovo\Documents\GitHub\NLayeredAppRefactor\NorthWind.Buisness\bin\Debug\Northwind.DataAccess.pdb
+C:\Users\Lenovo\Documents\GitHub\NLayeredAppRefactor\NorthWind.Buisness\bin\Debug\Northwind.DataAccess.dll.config
+C:\Users\Lenovo\Documents\GitHub\NLayeredAppRefactor\NorthWind.Buisness\bin\Debug\Northwind.Entities.pdb
+C:\Users\Lenovo\Documents\GitHub\NLayeredAppRefactor\NorthWind.Buisness\bin\Debug\EntityFramework.xml
+C:\Users\Lenovo\Documents\GitHub\NLayeredAppRefactor\NorthWind.Buisness\obj\Debug\NorthWind.Buisness.csprojAssemblyReference.cache
+C:\Users\Lenovo\Documents\GitHub\NLayeredAppRefactor\NorthWind.Buisness\obj\Debug\NorthWind.Buisness.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\Documents\GitHub\NLayeredAppRefactor\NorthWind.Buisness\obj\Debug\NorthWind.Buisness.csproj.CopyComplete
+C:\Users\Lenovo\Documents\GitHub\NLayeredAppRefactor\NorthWind.Buisness\obj\Debug\NorthWind.Buisness.dll
+C:\Users\Lenovo\Documents\GitHub\NLayeredAppRefactor\NorthWind.Buisness\obj\Debug\NorthWind.Buisness.pdb
