@@ -34,14 +34,33 @@ namespace NorthWind.Buisness.Concrete
             return _productDal.GetAll();
         }
 
-        public List<Product> GetProductsByCategory(int categoryId)
+        public List<Product> GetProductsByCategory(int categoryId) 
         {
-            return _productDal.GetAll(p => p.CategoryId == categoryId);
+            return _productDal.GetAll(p => p.CategoryId == categoryId); 
+            // getAll metodu ile kategori id ye göre verileri çağırma.
         }
 
         public List<Product> GetProductsByName(string productName)
         {
-            return _productDal.GetAll(p => p.ProductName.Contains(productName));
+
+            // getAll metodu ile verdiğimiz text değerinin(harf/ler) verileri filtrelemesi/çağırması.
+            return _productDal.GetAll(p => p.ProductName.ToLower().Contains(productName.ToLower()));
+            
+        }
+
+        public void Add(Product product)
+        {
+            _productDal.Add(product);
+        }
+
+        public void Update(Product product)
+        {
+            _productDal.Update(product);
+        }
+
+        public void delete(Product product)
+        {
+            _productDal.Delete(product);
         }
     }
 }
