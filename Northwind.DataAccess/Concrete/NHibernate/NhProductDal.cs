@@ -36,7 +36,7 @@ namespace Northwind.DataAccess.Concrete.NHibernate
             List<Product> products = new List<Product>
             {
                 new Product{
-                    ProductID = 1,
+                    ProductId = 1,
                     CategoryId = 1,
                     ProductName = "Laptop",
                     QuantityPerUnit = "1 in a box",

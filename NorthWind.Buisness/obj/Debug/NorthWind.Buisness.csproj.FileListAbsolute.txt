@@ -40,3 +40,7 @@ C:\Users\Lenovo\Documents\GitHub\NLayeredAppRefactor\NorthWind.Buisness\obj\Debu
 C:\Users\Lenovo\Documents\GitHub\NLayeredAppRefactor\NorthWind.Buisness\obj\Debug\NorthWind.Buisness.csproj.CopyComplete
 C:\Users\Lenovo\Documents\GitHub\NLayeredAppRefactor\NorthWind.Buisness\obj\Debug\NorthWind.Buisness.dll
 C:\Users\Lenovo\Documents\GitHub\NLayeredAppRefactor\NorthWind.Buisness\obj\Debug\NorthWind.Buisness.pdb
+C:\Users\pc\Documents\GitHub\NLayeredAppRefactor\NorthWind.Buisness\bin\Debug\FluentValidation.dll
+C:\Users\pc\Documents\GitHub\NLayeredAppRefactor\NorthWind.Buisness\bin\Debug\FluentValidation.xml
+C:\Users\pc\Documents\GitHub\NLayeredAppRefactor\NorthWind.Buisness\bin\Debug\Ninject.dll
+C:\Users\pc\Documents\GitHub\NLayeredAppRefactor\NorthWind.Buisness\bin\Debug\Ninject.xml

@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using NorthWind.Buisness.Abstract;
+using NorthWind.Buisness.DependencyResolvers.Ninject;
 using Northwind.DataAccess.Concrete.EntityFramework;
 using Northwind.DataAccess.Concrete.NHibernate;
 using Northwind.Entities.Concrete;
@@ -21,8 +22,9 @@ namespace NorthWind.WebFormsUI
         public Form1()
         {
             InitializeComponent();
-            _productService = new ProductManager(new EfProductDal());
-            _categoryService = new CategoryManager(new EfCategoryDal());
+            _productService = InstanceFactory.GetInstance<IProductService>(); //Ninject ile Dependency Injection yapılan kodlar.
+            _categoryService = InstanceFactory.GetInstance<ICategoryService>();
+            
             this.AutoScroll = true;
             this.HorizontalScroll.Enabled = true;
             this.HorizontalScroll.Visible = true;
@@ -116,21 +118,29 @@ namespace NorthWind.WebFormsUI
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            _productService.Add(new Product // efEntityRepositoryBase içerisindeki add methodunu çalıştırarak ürün ekleme.
+            try // ProductValidator.cs çalışıyor. (FluentValidator)
             {
-                CategoryId = Convert.ToInt32(cbxCategoryAdd.SelectedValue),
-                ProductName = tbxProductNameAdd.Text,
-                UnitPrice = Convert.ToDecimal(tbxUnitPriceAdd.Text),
-                UnitsInStock = Convert.ToInt16(tbxUnitsInStockAdd.Text),
-                QuantityPerUnit = tbxQuantityPerUnitAdd.Text
+                _productService.Add(new Product // efEntityRepositoryBase içerisindeki add methodunu çalıştırarak ürün ekleme.
+                    {
+                        CategoryId = Convert.ToInt32(cbxCategoryAdd.SelectedValue),
+                        ProductName = tbxProductNameAdd.Text,
+                        UnitPrice = Convert.ToDecimal(tbxUnitPriceAdd.Text),
+                        UnitsInStock = Convert.ToInt16(tbxUnitsInStockAdd.Text),
+                        QuantityPerUnit = tbxQuantityPerUnitAdd.Text
 
 
 
+                    }
+                );
+
+                LoadProduct(); // butona basıldığı anda Dgw listesini yenilemek için.
+                MessageBox.Show("Ürün Eklendi!");
             }
-            );
-
-            LoadProduct(); // butona basıldığı anda Dgw listesini yenilemek için.
-            MessageBox.Show("Ürün Eklendi!");
+            catch (Exception exception)
+            {
+                MessageBox.Show(exception.Message); // FluentValidation mesajı messagebox'ta gösterilerecek.
+            }
+            
         }
 
         private void cbxCategoryAdd_SelectedIndexChanged(object sender, EventArgs e)
@@ -142,9 +152,12 @@ namespace NorthWind.WebFormsUI
 
         private void btnUpdate_Click(object sender, EventArgs e) // update butonu
         {
-            _productService.Update(new Product
+            try // ProductValidator.cs çalışıyor. (FluentValidator)
             {
-                ProductID = Convert.ToInt32(dgwProduct.CurrentRow.Cells[0].Value), // datagridview'den seçilen bir satırın ilk değeri productId.
+
+                _productService.Update(new Product
+            {
+                ProductId = Convert.ToInt32(dgwProduct.CurrentRow.Cells[0].Value), // datagridview'den seçilen bir satırın ilk değeri productId.
                 ProductName = tbxProductNameUpdate.Text,
                 CategoryId = Convert.ToInt32(cbxCategoryUpdate.SelectedValue),
                 UnitsInStock = Convert.ToInt16(tbxUnitsInStockUpdate.Text),  /// kalan bölümler add gibi.
@@ -153,6 +166,11 @@ namespace NorthWind.WebFormsUI
             });
             LoadProduct(); // butona basıldığı anda Dgw listesini yenilemek için.
             MessageBox.Show("Ürün Güncellendi!");
+            }
+            catch (Exception exception)
+            {
+                MessageBox.Show(exception.Message); // FluentValidation mesajı messagebox'ta gösterilerecek.
+            }
         }
 
         private void dgwProduct_CellClick(object sender, DataGridViewCellEventArgs e) // datagridview cellclick
@@ -172,24 +190,28 @@ namespace NorthWind.WebFormsUI
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
-            DialogResult dialogResult = MessageBox.Show(
-                "Silmek istediğinizden emin misiniz?", "Ürün Silme", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
-            if (dialogResult == DialogResult.Yes)
+            if (dgwProduct.CurrentRow != null) // eğer seçili bir değer varsa aşağıdaki işlemleri uygula.
             {
-                _productService.Delete(new Product
+                var productName1 = dgwProduct.CurrentRow.Cells[1].Value.ToString();
+                DialogResult dialogResult = MessageBox.Show(
+                    $"'{productName1}' İsimli Ürünü Silmek istediğinizden emin misiniz?", "Ürün Silme", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                if (dialogResult == DialogResult.Yes)
                 {
-                    ProductID = Convert.ToInt32(dgwProduct.CurrentRow.Cells[0].Value), // datagridview'den seçilen bir satırın ilk değeri productId.
-                    ProductName = tbxProductNameUpdate.Text,
-                    CategoryId = Convert.ToInt32(cbxCategoryUpdate.SelectedValue),
-                    UnitsInStock = Convert.ToInt16(tbxUnitsInStockUpdate.Text),  /// kalan bölümler add gibi.
-                    QuantityPerUnit = tbxQuantityPerUnitUpdate.Text,
-                    UnitPrice = Convert.ToDecimal(tbxUnitPriceUpdate.Text)
-                });
-                MessageBox.Show("Ürün Başarıyla Silindi", caption:"Başarılı",MessageBoxButtons.OK,MessageBoxIcon.Information);
-            }
-            else
-            {
-                MessageBox.Show("Ürün Silinemedi", caption:"Hata!",MessageBoxButtons.OK,MessageBoxIcon.Warning);
+                    _productService.Delete(new Product
+                    {
+                        ProductId = Convert.ToInt32(dgwProduct.CurrentRow.Cells[0].Value), // datagridview'den seçilen bir satırın ilk değeri productId.
+                        ProductName = tbxProductNameUpdate.Text,
+                        CategoryId = Convert.ToInt32(cbxCategoryUpdate.SelectedValue),
+                        UnitsInStock = Convert.ToInt16(tbxUnitsInStockUpdate.Text),  /// kalan bölümler add gibi.
+                        QuantityPerUnit = tbxQuantityPerUnitUpdate.Text,
+                        UnitPrice = Convert.ToDecimal(tbxUnitPriceUpdate.Text)
+                    });
+                    MessageBox.Show("Ürün Başarıyla Silindi", caption:"Başarılı",MessageBoxButtons.OK,MessageBoxIcon.Information);
+                }
+                else
+                {
+                    MessageBox.Show("Ürün Silinemedi", caption:"Hata!",MessageBoxButtons.OK,MessageBoxIcon.Warning);
+                }
             }
 
             LoadProduct(); // butona basıldığı anda Dgw listesini yenilemek için.

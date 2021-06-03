@@ -94,3 +94,5 @@ C:\Users\Lenovo\Documents\GitHub\NLayeredAppRefactor\NorthWind.WebFormsUI\obj\De
 C:\Users\Lenovo\Documents\GitHub\NLayeredAppRefactor\NorthWind.WebFormsUI\obj\Debug\netcoreapp3.1\NorthWind.WebFormsUI.dll
 C:\Users\Lenovo\Documents\GitHub\NLayeredAppRefactor\NorthWind.WebFormsUI\obj\Debug\netcoreapp3.1\NorthWind.WebFormsUI.pdb
 C:\Users\Lenovo\Documents\GitHub\NLayeredAppRefactor\NorthWind.WebFormsUI\obj\Debug\netcoreapp3.1\NorthWind.WebFormsUI.genruntimeconfig.cache
+C:\Users\pc\Documents\GitHub\NLayeredAppRefactor\NorthWind.WebFormsUI\bin\Debug\netcoreapp3.1\FluentValidation.dll
+C:\Users\pc\Documents\GitHub\NLayeredAppRefactor\NorthWind.WebFormsUI\bin\Debug\netcoreapp3.1\Ninject.dll

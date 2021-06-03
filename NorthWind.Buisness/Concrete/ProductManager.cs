@@ -5,7 +5,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using FluentValidation;
 using NorthWind.Buisness.Abstract;
+using NorthWind.Buisness.Utilities;
+using NorthWind.Buisness.ValidationRules.FluentValidation;
 using Northwind.DataAccess.Concrete.NHibernate;
 
 namespace NorthWind.Buisness.Concrete 
@@ -13,21 +16,15 @@ namespace NorthWind.Buisness.Concrete
     public class ProductManager : IProductService
     {
         EfProductDal _productDal = new EfProductDal(); // ProductDal DataAccess'ten gelir.
-        private EfProductDal efProductDal;
-        private NhProductDal nhProductDal;
+        private EfProductDal _efProductDal;
+        private NhProductDal _nhProductDal;
 
-        public ProductManager(EfProductDal efProductDal)
-        {
-            this.efProductDal = efProductDal;
-        }
+        
 
-        public ProductManager(NhProductDal nhProductDal)
-        {
-            this.nhProductDal = nhProductDal;
-        }
+       
 
         // alt çizgi ile isimlendirme sebebi ctor ile set edebilmek için ancak bu örnekte ctor yok.
-        public List<Product> GetAll() // Product entities'ten gelir.
+        public List<Product> GetAll() // Product entities.product'tan gelir.
         {
             // iş kodları yazılır, şartlar vs.
             
@@ -50,11 +47,13 @@ namespace NorthWind.Buisness.Concrete
 
         public void Add(Product product)
         {
+            ValidationTool.Valitade(new ProductValidator(),product); // FluentValidator ( ŞİMDİLİK AKTİF DEĞİL )
             _productDal.Add(product);
         }
 
         public void Update(Product product)
         {
+           ValidationTool.Valitade(new ProductValidator(), product); // FluentValidator ( ŞİMDİLİK AKTİF DEĞİL )
             _productDal.Update(product);
         }
 

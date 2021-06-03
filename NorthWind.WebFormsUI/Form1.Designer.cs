@@ -442,7 +442,6 @@ namespace NorthWind.WebFormsUI
         private System.Windows.Forms.Label lblUnitPriceUpdate;
         private System.Windows.Forms.Label lblCategoryUpdate;
         private System.Windows.Forms.Label lblProductUpdate;
-        private System.Windows.Forms.Label lblStockPerUnitDelete;
         private System.Windows.Forms.Label lblDltDelete;
         private System.Windows.Forms.Button btnDelete;
     }
