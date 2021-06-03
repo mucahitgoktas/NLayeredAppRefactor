@@ -23,6 +23,11 @@ namespace NorthWind.WebFormsUI
             InitializeComponent();
             _productService = new ProductManager(new EfProductDal());
             _categoryService = new CategoryManager(new EfCategoryDal());
+            this.AutoScroll = true;
+            this.HorizontalScroll.Enabled = true;
+            this.HorizontalScroll.Visible = true;
+            this.VerticalScroll.Enabled = true;
+            this.VerticalScroll.Visible = true;
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e) // datagridview eventi.
@@ -139,7 +144,7 @@ namespace NorthWind.WebFormsUI
         {
             _productService.Update(new Product
             {
-                ProductId = Convert.ToInt32(dgwProduct.CurrentRow.Cells[0].Value), // datagridview'den seçilen bir satırın ilk değeri productId.
+                ProductID = Convert.ToInt32(dgwProduct.CurrentRow.Cells[0].Value), // datagridview'den seçilen bir satırın ilk değeri productId.
                 ProductName = tbxProductNameUpdate.Text,
                 CategoryId = Convert.ToInt32(cbxCategoryUpdate.SelectedValue),
                 UnitsInStock = Convert.ToInt16(tbxUnitsInStockUpdate.Text),  /// kalan bölümler add gibi.
@@ -161,28 +166,38 @@ namespace NorthWind.WebFormsUI
 
         private void btnDltDelete_Click(object sender, EventArgs e)
         {
-           
-            
 
+
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
             DialogResult dialogResult = MessageBox.Show(
-                "Silmek istediğinizden emin misiniz?", "Sil", MessageBoxButtons.YesNo);
-
+                "Silmek istediğinizden emin misiniz?", "Ürün Silme", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
             if (dialogResult == DialogResult.Yes)
             {
-                _productService.delete(new Product
+                _productService.Delete(new Product
                 {
-                    ProductId = Convert.ToInt32(dgwProduct.CurrentRow.Cells[0].Value), // datagridview'den seçilen bir satırın ilk değeri productId.
+                    ProductID = Convert.ToInt32(dgwProduct.CurrentRow.Cells[0].Value), // datagridview'den seçilen bir satırın ilk değeri productId.
                     ProductName = tbxProductNameUpdate.Text,
                     CategoryId = Convert.ToInt32(cbxCategoryUpdate.SelectedValue),
                     UnitsInStock = Convert.ToInt16(tbxUnitsInStockUpdate.Text),  /// kalan bölümler add gibi.
                     QuantityPerUnit = tbxQuantityPerUnitUpdate.Text,
                     UnitPrice = Convert.ToDecimal(tbxUnitPriceUpdate.Text)
                 });
-                       
+                MessageBox.Show("Ürün Başarıyla Silindi", caption:"Başarılı",MessageBoxButtons.OK,MessageBoxIcon.Information);
             }
-            LoadProduct(); // butona basıldığı anda Dgw listesini yenilemek için.
-            MessageBox.Show("Ürün Başarıyla Silindi");
+            else
+            {
+                MessageBox.Show("Ürün Silinemedi", caption:"Hata!",MessageBoxButtons.OK,MessageBoxIcon.Warning);
+            }
 
+            LoadProduct(); // butona basıldığı anda Dgw listesini yenilemek için.
+            
         }
+
+
+
+
     }
 }

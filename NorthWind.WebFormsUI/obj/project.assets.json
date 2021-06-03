@@ -1075,23 +1075,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\pc\\.nuget\\packages\\": {},
+    "C:\\Users\\Lenovo\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\pc\\Documents\\GitHub\\NLayeredAppRefactor\\NorthWind.WebFormsUI\\NorthWind.WebFormsUI.csproj",
+      "projectUniqueName": "C:\\Users\\Lenovo\\Documents\\GitHub\\NLayeredAppRefactor\\NorthWind.WebFormsUI\\NorthWind.WebFormsUI.csproj",
       "projectName": "NorthWind.WebFormsUI",
-      "projectPath": "C:\\Users\\pc\\Documents\\GitHub\\NLayeredAppRefactor\\NorthWind.WebFormsUI\\NorthWind.WebFormsUI.csproj",
-      "packagesPath": "C:\\Users\\pc\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\pc\\Documents\\GitHub\\NLayeredAppRefactor\\NorthWind.WebFormsUI\\obj\\",
+      "projectPath": "C:\\Users\\Lenovo\\Documents\\GitHub\\NLayeredAppRefactor\\NorthWind.WebFormsUI\\NorthWind.WebFormsUI.csproj",
+      "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Lenovo\\Documents\\GitHub\\NLayeredAppRefactor\\NorthWind.WebFormsUI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\pc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -1106,8 +1106,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\pc\\Documents\\GitHub\\NLayeredAppRefactor\\NorthWind.Buisness\\NorthWind.Buisness.csproj": {
-              "projectPath": "C:\\Users\\pc\\Documents\\GitHub\\NLayeredAppRefactor\\NorthWind.Buisness\\NorthWind.Buisness.csproj"
+            "C:\\Users\\Lenovo\\Documents\\GitHub\\NLayeredAppRefactor\\NorthWind.Buisness\\NorthWind.Buisness.csproj": {
+              "projectPath": "C:\\Users\\Lenovo\\Documents\\GitHub\\NLayeredAppRefactor\\NorthWind.Buisness\\NorthWind.Buisness.csproj"
             }
           }
         }

@@ -58,7 +58,7 @@ namespace NorthWind.Buisness.Concrete
             _productDal.Update(product);
         }
 
-        public void delete(Product product)
+        public void Delete(Product product)
         {
             _productDal.Delete(product);
         }

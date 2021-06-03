@@ -49,6 +49,7 @@ namespace NorthWind.WebFormsUI
             this.lblCategoryAdd = new System.Windows.Forms.Label();
             this.lblProductNameAdd = new System.Windows.Forms.Label();
             this.gbxUpdate = new System.Windows.Forms.GroupBox();
+            this.lblDltDelete = new System.Windows.Forms.Label();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.cbxCategoryUpdate = new System.Windows.Forms.ComboBox();
             this.tbxQuantityPerUnitUpdate = new System.Windows.Forms.TextBox();
@@ -60,8 +61,7 @@ namespace NorthWind.WebFormsUI
             this.lblUnitPriceUpdate = new System.Windows.Forms.Label();
             this.lblCategoryUpdate = new System.Windows.Forms.Label();
             this.lblProductUpdate = new System.Windows.Forms.Label();
-            this.btnDltDelete = new System.Windows.Forms.Button();
-            this.lblDltDelete = new System.Windows.Forms.Label();
+            this.btnDelete = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgwProduct)).BeginInit();
             this.gbxCategory.SuspendLayout();
             this.gbxProductName.SuspendLayout();
@@ -252,8 +252,8 @@ namespace NorthWind.WebFormsUI
             // 
             // gbxUpdate
             // 
+            this.gbxUpdate.Controls.Add(this.btnDelete);
             this.gbxUpdate.Controls.Add(this.lblDltDelete);
-            this.gbxUpdate.Controls.Add(this.btnDltDelete);
             this.gbxUpdate.Controls.Add(this.btnUpdate);
             this.gbxUpdate.Controls.Add(this.cbxCategoryUpdate);
             this.gbxUpdate.Controls.Add(this.tbxQuantityPerUnitUpdate);
@@ -271,6 +271,15 @@ namespace NorthWind.WebFormsUI
             this.gbxUpdate.TabIndex = 12;
             this.gbxUpdate.TabStop = false;
             this.gbxUpdate.Text = "Ürün Güncelleme";
+            // 
+            // lblDltDelete
+            // 
+            this.lblDltDelete.AutoSize = true;
+            this.lblDltDelete.Location = new System.Drawing.Point(712, 35);
+            this.lblDltDelete.Name = "lblDltDelete";
+            this.lblDltDelete.Size = new System.Drawing.Size(85, 15);
+            this.lblDltDelete.TabIndex = 13;
+            this.lblDltDelete.Text = "Seçili Ürünü Sil";
             // 
             // btnUpdate
             // 
@@ -363,30 +372,22 @@ namespace NorthWind.WebFormsUI
             this.lblProductUpdate.TabIndex = 0;
             this.lblProductUpdate.Text = "Ürün Adı";
             // 
-            // btnDltDelete
+            // btnDelete
             // 
-            this.btnDltDelete.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnDltDelete.Location = new System.Drawing.Point(696, 71);
-            this.btnDltDelete.Name = "btnDltDelete";
-            this.btnDltDelete.Size = new System.Drawing.Size(116, 53);
-            this.btnDltDelete.TabIndex = 12;
-            this.btnDltDelete.Text = "SİL";
-            this.btnDltDelete.UseVisualStyleBackColor = true;
-            // 
-            // lblDltDelete
-            // 
-            this.lblDltDelete.AutoSize = true;
-            this.lblDltDelete.Location = new System.Drawing.Point(712, 53);
-            this.lblDltDelete.Name = "lblDltDelete";
-            this.lblDltDelete.Size = new System.Drawing.Size(85, 15);
-            this.lblDltDelete.TabIndex = 13;
-            this.lblDltDelete.Text = "Seçili Ürünü Sil";
+            this.btnDelete.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnDelete.Location = new System.Drawing.Point(712, 53);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(85, 43);
+            this.btnDelete.TabIndex = 14;
+            this.btnDelete.Text = "SİL";
+            this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(907, 857);
+            this.ClientSize = new System.Drawing.Size(907, 749);
             this.Controls.Add(this.gbxUpdate);
             this.Controls.Add(this.gbxAdd);
             this.Controls.Add(this.gbxProductName);
@@ -443,7 +444,7 @@ namespace NorthWind.WebFormsUI
         private System.Windows.Forms.Label lblProductUpdate;
         private System.Windows.Forms.Label lblStockPerUnitDelete;
         private System.Windows.Forms.Label lblDltDelete;
-        private System.Windows.Forms.Button btnDltDelete;
+        private System.Windows.Forms.Button btnDelete;
     }
 }
 
